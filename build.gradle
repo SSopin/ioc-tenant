@@ -10,13 +10,6 @@ repositories {
     mavenCentral()
 }
 
-//sourceCompatibility = JavaVersion.VERSION_11
-//
-//compileTestJava {
-//    sourceCompatibility = JavaVersion.VERSION_11
-//    targetCompatibility = JavaVersion.VERSION_11
-//}
-
 jar {
     manifest {
         attributes(
@@ -29,7 +22,7 @@ jar {
 
 dependencies {
     // Dependency to our ioc framework implementation
-    implementation 'dev.sopin:inversion-of-control:1.0'
+    implementation 'dev.sopin:ioc-core:1.0'
 
     implementation 'org.apache.logging.log4j:log4j-api:2.14.0'
     implementation 'org.apache.logging.log4j:log4j-core:2.14.0'
