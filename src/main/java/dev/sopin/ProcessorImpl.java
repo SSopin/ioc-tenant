@@ -7,6 +7,6 @@ public class ProcessorImpl implements Processor {
 
     @Override
     public String process() {
-        return "Tenant's piece of logic has been executed!";
+        return "Hello World! Tenant's piece of logic has been executed!";
     }
 }
