@@ -6,10 +6,12 @@ group 'dev.sopin'
 version '1.0-SNAPSHOT'
 
 repositories {
+    // Add local repository as a source
     mavenLocal()
     mavenCentral()
 }
 
+// Make resulting Jar file executable
 jar {
     manifest {
         attributes(
@@ -18,7 +20,6 @@ jar {
         )
     }
 }
-
 
 dependencies {
     // Dependency to our ioc framework implementation
