@@ -19,6 +19,9 @@ jar {
                 'Main-Class': 'dev.sopin.TenantApp'
         )
     }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it)}
+    }
 }
 
 dependencies {
